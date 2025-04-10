@@ -64,8 +64,7 @@ Use strictly the table: {full_table_name}. Do NOT use any other table.
 The only allowed tables in this database are: {allowed_tables}.
 The columns in this table are: {', '.join(column_metadata.keys())}.
 
-If the question is not answerable using the given table, respond with: "This question cannot be answered with the selected table."
-Column `price` is money type. Convert it to money before aggregating.
+Column [price] contains numeric values. Use it directly for sorting or aggregation.
 """
     model_name = 'llama-3.1-8b-instant'
     chat_completion = client.chat.completions.create(
