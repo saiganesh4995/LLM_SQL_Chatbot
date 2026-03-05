@@ -44,7 +44,7 @@ jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 jupyter_client==8.6.1
 jupyter_core==5.7.2
-keras==3.6.0
+keras>=3.12.1
 libclang==18.1.1
 Markdown==3.7
 markdown-it-py==3.0.0
@@ -124,3 +124,4 @@ websocket-client==1.8.0
 Werkzeug==3.0.4
 wrapt==1.16.0
 wsproto==1.2.0
+
